@@ -77,7 +77,7 @@ source = ColumnDataSource(data={
     'Negara': data.loc[1985].Negara,
     'Jenis_Kelamin': data.loc[1985].Jenis_Kelamin,
     'Umur': data.loc[1985].Umur,
-    'Generasi': data.loc[1985].Generasi
+    'Generasi': data.loc[1985].Generasi,
     })
 
 # Create the figure: plot
@@ -109,7 +109,7 @@ def update_plot(attr, old, new):
     'Negara': data.loc[yr].Negara,
     'Jenis_Kelamin': data.loc[yr].Jenis_Kelamin,
     'Umur': data.loc[yr].Umur,
-    'Generasi': data.loc[yr].Generasi
+    'Generasi': data.loc[yr].Generasi,
     }
     source.data = new_data
     
