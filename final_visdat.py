@@ -103,14 +103,14 @@ def update_plot(attr, old, new):
     plot.xaxis.axis_label = x
     plot.yaxis.axis_label = y
     # new data
-    new_data = {
+    new_data = dict(
     'x': data.loc[yr][x],
     'y': data.loc[yr][y],
     'Negara': data.loc[yr].Negara,
     'Jenis_Kelamin': data.loc[yr].Jenis_Kelamin,
     'Umur': data.loc[yr].Umur,
     'Generasi': data.loc[yr].Generasi,
-    }
+    )
     source.data = new_data
     
     # Add title to figure: plot.title.text
